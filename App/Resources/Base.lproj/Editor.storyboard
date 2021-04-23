@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Wv-Tv-aR6">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Editor View Controller-->
+        <scene sceneID="YLa-lt-Mnb">
+            <objects>
+                <viewController storyboardIdentifier="Editor" automaticallyAdjustsScrollViewInsets="NO" id="8Wv-Tv-aR6" customClass="EditorViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B67-oP-e4i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XnG-3k-Fii">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1f-lg-jxG">
+                                        <rect key="frame" x="25" y="2" width="38" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7yh-3c-PZR">
+                                                <rect key="frame" x="0.33333333333333215" y="0.33333333333337123" width="37.333333333333343" height="37.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                                <state key="normal" image="xmark.circle.fill" catalog="system">
+                                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="36"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="38" id="0Vf-VY-mTa"/>
+                                            <constraint firstItem="7yh-3c-PZR" firstAttribute="width" secondItem="V1f-lg-jxG" secondAttribute="width" multiplier="0.98" id="J1A-Dv-oP6"/>
+                                            <constraint firstItem="7yh-3c-PZR" firstAttribute="centerY" secondItem="V1f-lg-jxG" secondAttribute="centerY" id="YoZ-P4-MRg"/>
+                                            <constraint firstAttribute="height" constant="38" id="bsz-oc-AVN"/>
+                                            <constraint firstItem="7yh-3c-PZR" firstAttribute="centerX" secondItem="V1f-lg-jxG" secondAttribute="centerX" id="jHN-dE-7QG"/>
+                                            <constraint firstItem="7yh-3c-PZR" firstAttribute="height" secondItem="V1f-lg-jxG" secondAttribute="height" multiplier="0.98" id="oNn-Pf-aV1"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPN-O0-yIh">
+                                        <rect key="frame" x="352" y="2" width="38" height="38"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBR-Yt-aVC">
+                                                <rect key="frame" x="0.33333333333331439" y="0.33333333333337123" width="37.333333333333336" height="37.333333333333336"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                                <state key="normal" image="checkmark.circle" catalog="system">
+                                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="36"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressAcceptButton:" destination="8Wv-Tv-aR6" eventType="touchUpInside" id="qQc-m3-aUP"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="gBR-Yt-aVC" firstAttribute="centerY" secondItem="rPN-O0-yIh" secondAttribute="centerY" id="B2s-a1-qfS"/>
+                                            <constraint firstItem="gBR-Yt-aVC" firstAttribute="centerX" secondItem="rPN-O0-yIh" secondAttribute="centerX" id="DON-Qi-4H9"/>
+                                            <constraint firstAttribute="height" constant="38" id="GC7-Dw-Xw1"/>
+                                            <constraint firstAttribute="width" constant="38" id="UFw-5M-luE"/>
+                                            <constraint firstItem="gBR-Yt-aVC" firstAttribute="height" secondItem="rPN-O0-yIh" secondAttribute="height" multiplier="0.98" id="kXj-6b-wrm"/>
+                                            <constraint firstItem="gBR-Yt-aVC" firstAttribute="width" secondItem="rPN-O0-yIh" secondAttribute="width" multiplier="0.98" id="lsR-FL-YtV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="rEn-b3-YyX"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="rPN-O0-yIh" secondAttribute="trailing" constant="24" id="CMk-y6-Esv"/>
+                                    <constraint firstItem="rPN-O0-yIh" firstAttribute="centerY" secondItem="XnG-3k-Fii" secondAttribute="centerY" constant="-1" id="Cyb-x3-iQt"/>
+                                    <constraint firstItem="V1f-lg-jxG" firstAttribute="centerY" secondItem="XnG-3k-Fii" secondAttribute="centerY" constant="-1" id="Lgq-v3-nWl"/>
+                                    <constraint firstItem="V1f-lg-jxG" firstAttribute="leading" secondItem="XnG-3k-Fii" secondAttribute="leading" constant="25" id="MKY-qc-3gh"/>
+                                    <constraint firstAttribute="height" constant="44" id="k5S-k1-dNJ"/>
+                                </constraints>
+                            </view>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GCv-XA-IYR">
+                                <rect key="frame" x="0.0" y="44" width="414" height="774"/>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4dN-vN-nT1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GCv-XA-IYR" firstAttribute="trailing" secondItem="4dN-vN-nT1" secondAttribute="trailing" id="5m1-rw-b6I"/>
+                            <constraint firstItem="4dN-vN-nT1" firstAttribute="trailing" secondItem="XnG-3k-Fii" secondAttribute="trailing" id="DsC-c1-8dL"/>
+                            <constraint firstItem="XnG-3k-Fii" firstAttribute="top" secondItem="GCv-XA-IYR" secondAttribute="bottom" id="H4K-um-OGX"/>
+                            <constraint firstItem="XnG-3k-Fii" firstAttribute="leading" secondItem="4dN-vN-nT1" secondAttribute="leading" id="Zh6-Jh-jCp"/>
+                            <constraint firstItem="XnG-3k-Fii" firstAttribute="bottom" secondItem="4dN-vN-nT1" secondAttribute="bottom" id="aa9-Hu-lwE"/>
+                            <constraint firstItem="GCv-XA-IYR" firstAttribute="top" secondItem="4dN-vN-nT1" secondAttribute="top" id="ewe-ls-Jx6"/>
+                            <constraint firstItem="GCv-XA-IYR" firstAttribute="leading" secondItem="4dN-vN-nT1" secondAttribute="leading" id="hod-G9-eMa"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <connections>
+                        <outlet property="acceptButton" destination="gBR-Yt-aVC" id="Fbi-Ff-ydE"/>
+                        <outlet property="cancelButton" destination="7yh-3c-PZR" id="qCh-Hs-60U"/>
+                        <outlet property="photoCropEditorView" destination="GCv-XA-IYR" id="gId-jV-m9p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fm8-Qy-3W9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkmark.circle" catalog="system" width="128" height="121"/>
+        <image name="xmark.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

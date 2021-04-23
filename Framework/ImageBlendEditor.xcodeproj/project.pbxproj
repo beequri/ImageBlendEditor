@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE51B32125A346E30016051B /* CircularAngleIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE51B32025A346E30016051B /* CircularAngleIndicator.swift */; };
+		F8A4715124377ABF00C2A46A /* ImageBlendEditor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A4714724377ABF00C2A46A /* ImageBlendEditor.framework */; };
+		F8A4715624377ABF00C2A46A /* PhotoCropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4715524377ABF00C2A46A /* PhotoCropTests.swift */; };
+		F8A4715824377ABF00C2A46A /* PhotoCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A4714A24377ABF00C2A46A /* PhotoCrop.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8A471A024377D0200C2A46A /* CGImage+PhotoCropExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4717624377D0100C2A46A /* CGImage+PhotoCropExtension.swift */; };
+		F8A471A124377D0200C2A46A /* UIImage+PhotoCropExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4717724377D0100C2A46A /* UIImage+PhotoCropExtension.swift */; };
+		F8A471A224377D0200C2A46A /* UIColor+PhotoCropExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4717824377D0100C2A46A /* UIColor+PhotoCropExtension.swift */; };
+		F8A471A324377D0200C2A46A /* CGPoint+PhotoCropExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4717924377D0100C2A46A /* CGPoint+PhotoCropExtension.swift */; };
+		F8A471A424377D0200C2A46A /* CGFloat+PhotoCropExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4717A24377D0100C2A46A /* CGFloat+PhotoCropExtension.swift */; };
+		F8A471A524377D0200C2A46A /* RadianAngle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4717C24377D0100C2A46A /* RadianAngle.swift */; };
+		F8A471A724377D0200C2A46A /* HorizontalDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4717F24377D0100C2A46A /* HorizontalDial.swift */; };
+		F8A471A824377D0200C2A46A /* PhotoCropViewController+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718024377D0100C2A46A /* PhotoCropViewController+Angle.swift */; };
+		F8A471A924377D0200C2A46A /* ImageBlendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718124377D0100C2A46A /* ImageBlendViewController.swift */; };
+		F8A471AB24377D0200C2A46A /* PhotoCropViewController+Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718324377D0100C2A46A /* PhotoCropViewController+Customization.swift */; };
+		F8A471AC24377D0200C2A46A /* PhotoCropConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718524377D0100C2A46A /* PhotoCropConstants.swift */; };
+		F8A471AD24377D0200C2A46A /* PhotoCropView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718724377D0100C2A46A /* PhotoCropView+NSLayoutConstraint.swift */; };
+		F8A471AE24377D0200C2A46A /* PhotoCropView+Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718824377D0100C2A46A /* PhotoCropView+Angle.swift */; };
+		F8A471AF24377D0200C2A46A /* PhotoCropView+Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718924377D0100C2A46A /* PhotoCropView+Mask.swift */; };
+		F8A471B024377D0200C2A46A /* PhotoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718B24377D0100C2A46A /* PhotoScrollView.swift */; };
+		F8A471B124377D0200C2A46A /* PhotoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718C24377D0100C2A46A /* PhotoContentView.swift */; };
+		F8A471B224377D0200C2A46A /* PhotoCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718D24377D0100C2A46A /* PhotoCropView.swift */; };
+		F8A471B324377D0200C2A46A /* PhotoCropView+IGRCropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718E24377D0100C2A46A /* PhotoCropView+IGRCropView.swift */; };
+		F8A471B424377D0200C2A46A /* PhotoCropView+Touch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4718F24377D0200C2A46A /* PhotoCropView+Touch.swift */; };
+		F8A471B624377D0200C2A46A /* CropMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719324377D0200C2A46A /* CropMaskView.swift */; };
+		F8A471B724377D0200C2A46A /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719424377D0200C2A46A /* CropView.swift */; };
+		F8A471B824377D0200C2A46A /* CropView+Lines.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719524377D0200C2A46A /* CropView+Lines.swift */; };
+		F8A471B924377D0200C2A46A /* CropView+NSLayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719624377D0200C2A46A /* CropView+NSLayoutConstraint.swift */; };
+		F8A471BA24377D0200C2A46A /* CropView+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719724377D0200C2A46A /* CropView+AspectRatio.swift */; };
+		F8A471BB24377D0200C2A46A /* CropLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719924377D0200C2A46A /* CropLine.swift */; };
+		F8A471BC24377D0200C2A46A /* CropGridLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719A24377D0200C2A46A /* CropGridLine.swift */; };
+		F8A471BD24377D0200C2A46A /* CropCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719B24377D0200C2A46A /* CropCornerView.swift */; };
+		F8A471BE24377D0200C2A46A /* CropCornerLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719C24377D0200C2A46A /* CropCornerLine.swift */; };
+		F8A471BF24377D0200C2A46A /* PhotoCropView+Customization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719D24377D0200C2A46A /* PhotoCropView+Customization.swift */; };
+		F8A471C024377D0200C2A46A /* PhotoCropView+AspectRatio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719E24377D0200C2A46A /* PhotoCropView+AspectRatio.swift */; };
+		F8A471C124377D0200C2A46A /* PhotoCropView+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A4719F24377D0200C2A46A /* PhotoCropView+UIScrollView.swift */; };
+		F8A471C924377E6700C2A46A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A471C224377E6700C2A46A /* Assets.xcassets */; };
+		F8A471CA24377E6700C2A46A /* CornerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A471C324377E6700C2A46A /* CornerTests.swift */; };
+		F8A471CB24377E6700C2A46A /* MasksTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A471C424377E6700C2A46A /* MasksTest.swift */; };
+		F8A471CC24377E6700C2A46A /* CropTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A471C524377E6700C2A46A /* CropTests.swift */; };
+		F8A471CD24377E6700C2A46A /* LinesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A471C624377E6700C2A46A /* LinesTests.swift */; };
+		F8A471CE24377E6700C2A46A /* RotationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A471C724377E6700C2A46A /* RotationTests.swift */; };
+		F8A471CF24377E6700C2A46A /* AspectRatioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A471C824377E6700C2A46A /* AspectRatioTests.swift */; };
+		F8D4EAC025F2976C007D5618 /* ImageBlendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4EABF25F2976C007D5618 /* ImageBlendModel.swift */; };
+		F8D4EAD125F3D6D2007D5618 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8D4EAD025F3D6D2007D5618 /* Media.xcassets */; };
+		F8D4EAD525F5689A007D5618 /* ImageBlendEditorCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8D4EAD425F5689A007D5618 /* ImageBlendEditorCollectionViewCell.xib */; };
+		F8D4EAD925F568E0007D5618 /* ImageBlendEditorCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4EAD825F568E0007D5618 /* ImageBlendEditorCollectionViewCell.swift */; };
+		F8D4EADF25F8B274007D5618 /* ImageBlend.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4EADE25F8B274007D5618 /* ImageBlend.swift */; };
+		F8D4EAEB25F8EF7F007D5618 /* ImageBlendOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8D4EAEA25F8EF7F007D5618 /* ImageBlendOperation.swift */; };
+		F8F4DB89243E14340021FABA /* ImageBlendEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A471FB2438544B00C2A46A /* ImageBlendEditorViewController.swift */; };
+		F8F4DBA8244034150021FABA /* PhotoCropImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F4DBA7244034150021FABA /* PhotoCropImageViewController.swift */; };
+		F8F4DBB7244082F60021FABA /* VerticalDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F4DBB6244082F60021FABA /* VerticalDial.swift */; };
+		F8F4DBB92440B7DB0021FABA /* BaseCroppingDial.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8F4DBB82440B7DB0021FABA /* BaseCroppingDial.swift */; };
+		F8F4DBBD24442C060021FABA /* ImageBlendEditorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8F4DBBC24442C060021FABA /* ImageBlendEditorViewController.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8A4715224377ABF00C2A46A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8A4713E24377ABF00C2A46A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A4714624377ABF00C2A46A;
+			remoteInfo = PhotoCrop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE51B32025A346E30016051B /* CircularAngleIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularAngleIndicator.swift; sourceTree = "<group>"; };
+		F8A4714724377ABF00C2A46A /* ImageBlendEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageBlendEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A4714A24377ABF00C2A46A /* PhotoCrop.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCrop.h; sourceTree = "<group>"; };
+		F8A4714B24377ABF00C2A46A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A4715024377ABF00C2A46A /* ImageBlendEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageBlendEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A4715524377ABF00C2A46A /* PhotoCropTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCropTests.swift; sourceTree = "<group>"; };
+		F8A4715724377ABF00C2A46A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A4717624377D0100C2A46A /* CGImage+PhotoCropExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImage+PhotoCropExtension.swift"; sourceTree = "<group>"; };
+		F8A4717724377D0100C2A46A /* UIImage+PhotoCropExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+PhotoCropExtension.swift"; sourceTree = "<group>"; };
+		F8A4717824377D0100C2A46A /* UIColor+PhotoCropExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+PhotoCropExtension.swift"; sourceTree = "<group>"; };
+		F8A4717924377D0100C2A46A /* CGPoint+PhotoCropExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+PhotoCropExtension.swift"; sourceTree = "<group>"; };
+		F8A4717A24377D0100C2A46A /* CGFloat+PhotoCropExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+PhotoCropExtension.swift"; sourceTree = "<group>"; };
+		F8A4717C24377D0100C2A46A /* RadianAngle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadianAngle.swift; sourceTree = "<group>"; };
+		F8A4717F24377D0100C2A46A /* HorizontalDial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HorizontalDial.swift; sourceTree = "<group>"; };
+		F8A4718024377D0100C2A46A /* PhotoCropViewController+Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropViewController+Angle.swift"; sourceTree = "<group>"; };
+		F8A4718124377D0100C2A46A /* ImageBlendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBlendViewController.swift; sourceTree = "<group>"; };
+		F8A4718324377D0100C2A46A /* PhotoCropViewController+Customization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropViewController+Customization.swift"; sourceTree = "<group>"; };
+		F8A4718524377D0100C2A46A /* PhotoCropConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCropConstants.swift; sourceTree = "<group>"; };
+		F8A4718724377D0100C2A46A /* PhotoCropView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		F8A4718824377D0100C2A46A /* PhotoCropView+Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropView+Angle.swift"; sourceTree = "<group>"; };
+		F8A4718924377D0100C2A46A /* PhotoCropView+Mask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropView+Mask.swift"; sourceTree = "<group>"; };
+		F8A4718B24377D0100C2A46A /* PhotoScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoScrollView.swift; sourceTree = "<group>"; };
+		F8A4718C24377D0100C2A46A /* PhotoContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoContentView.swift; sourceTree = "<group>"; };
+		F8A4718D24377D0100C2A46A /* PhotoCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCropView.swift; sourceTree = "<group>"; };
+		F8A4718E24377D0100C2A46A /* PhotoCropView+IGRCropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropView+IGRCropView.swift"; sourceTree = "<group>"; };
+		F8A4718F24377D0200C2A46A /* PhotoCropView+Touch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropView+Touch.swift"; sourceTree = "<group>"; };
+		F8A4719324377D0200C2A46A /* CropMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropMaskView.swift; sourceTree = "<group>"; };
+		F8A4719424377D0200C2A46A /* CropView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
+		F8A4719524377D0200C2A46A /* CropView+Lines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CropView+Lines.swift"; sourceTree = "<group>"; };
+		F8A4719624377D0200C2A46A /* CropView+NSLayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CropView+NSLayoutConstraint.swift"; sourceTree = "<group>"; };
+		F8A4719724377D0200C2A46A /* CropView+AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CropView+AspectRatio.swift"; sourceTree = "<group>"; };
+		F8A4719924377D0200C2A46A /* CropLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropLine.swift; sourceTree = "<group>"; };
+		F8A4719A24377D0200C2A46A /* CropGridLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropGridLine.swift; sourceTree = "<group>"; };
+		F8A4719B24377D0200C2A46A /* CropCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropCornerView.swift; sourceTree = "<group>"; };
+		F8A4719C24377D0200C2A46A /* CropCornerLine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropCornerLine.swift; sourceTree = "<group>"; };
+		F8A4719D24377D0200C2A46A /* PhotoCropView+Customization.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropView+Customization.swift"; sourceTree = "<group>"; };
+		F8A4719E24377D0200C2A46A /* PhotoCropView+AspectRatio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropView+AspectRatio.swift"; sourceTree = "<group>"; };
+		F8A4719F24377D0200C2A46A /* PhotoCropView+UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PhotoCropView+UIScrollView.swift"; sourceTree = "<group>"; };
+		F8A471C224377E6700C2A46A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8A471C324377E6700C2A46A /* CornerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerTests.swift; sourceTree = "<group>"; };
+		F8A471C424377E6700C2A46A /* MasksTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasksTest.swift; sourceTree = "<group>"; };
+		F8A471C524377E6700C2A46A /* CropTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropTests.swift; sourceTree = "<group>"; };
+		F8A471C624377E6700C2A46A /* LinesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinesTests.swift; sourceTree = "<group>"; };
+		F8A471C724377E6700C2A46A /* RotationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationTests.swift; sourceTree = "<group>"; };
+		F8A471C824377E6700C2A46A /* AspectRatioTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AspectRatioTests.swift; sourceTree = "<group>"; };
+		F8A471FB2438544B00C2A46A /* ImageBlendEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBlendEditorViewController.swift; sourceTree = "<group>"; };
+		F8D4EABF25F2976C007D5618 /* ImageBlendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBlendModel.swift; sourceTree = "<group>"; };
+		F8D4EAD025F3D6D2007D5618 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		F8D4EAD425F5689A007D5618 /* ImageBlendEditorCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageBlendEditorCollectionViewCell.xib; sourceTree = "<group>"; };
+		F8D4EAD825F568E0007D5618 /* ImageBlendEditorCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageBlendEditorCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8D4EADE25F8B274007D5618 /* ImageBlend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageBlend.swift; path = ImageBlend/ImageBlend.swift; sourceTree = SOURCE_ROOT; };
+		F8D4EAEA25F8EF7F007D5618 /* ImageBlendOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBlendOperation.swift; sourceTree = "<group>"; };
+		F8F4DBA7244034150021FABA /* PhotoCropImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCropImageViewController.swift; sourceTree = "<group>"; };
+		F8F4DBB6244082F60021FABA /* VerticalDial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalDial.swift; sourceTree = "<group>"; };
+		F8F4DBB82440B7DB0021FABA /* BaseCroppingDial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCroppingDial.swift; sourceTree = "<group>"; };
+		F8F4DBBC24442C060021FABA /* ImageBlendEditorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ImageBlendEditorViewController.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8A4714424377ABF00C2A46A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A4714D24377ABF00C2A46A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A4715124377ABF00C2A46A /* ImageBlendEditor.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE51B31F25A346A70016051B /* CircularIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				AE51B32025A346E30016051B /* CircularAngleIndicator.swift */,
+			);
+			path = CircularIndicator;
+			sourceTree = "<group>";
+		};
+		F8A4713D24377ABF00C2A46A = {
+			isa = PBXGroup;
+			children = (
+				F8A4714924377ABF00C2A46A /* ImageBlend */,
+				F8A4715424377ABF00C2A46A /* PhotoCropTests */,
+				F8A4714824377ABF00C2A46A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8A4714824377ABF00C2A46A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4714724377ABF00C2A46A /* ImageBlendEditor.framework */,
+				F8A4715024377ABF00C2A46A /* ImageBlendEditorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8A4714924377ABF00C2A46A /* ImageBlend */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4718624377D0100C2A46A /* PhotoTweakView */,
+				AE51B31F25A346A70016051B /* CircularIndicator */,
+				F8A4717524377D0100C2A46A /* Category */,
+				F8A4718424377D0100C2A46A /* Constants */,
+				F8A4717B24377D0100C2A46A /* Helper */,
+				F8A4717E24377D0100C2A46A /* HorizontalDial */,
+				F8D4EADE25F8B274007D5618 /* ImageBlend.swift */,
+				F8D4EABF25F2976C007D5618 /* ImageBlendModel.swift */,
+				F8D4EAEA25F8EF7F007D5618 /* ImageBlendOperation.swift */,
+				F8A4718124377D0100C2A46A /* ImageBlendViewController.swift */,
+				F8A471FB2438544B00C2A46A /* ImageBlendEditorViewController.swift */,
+				F8A4718024377D0100C2A46A /* PhotoCropViewController+Angle.swift */,
+				F8A4718324377D0100C2A46A /* PhotoCropViewController+Customization.swift */,
+				F8F4DBA7244034150021FABA /* PhotoCropImageViewController.swift */,
+				F8D4EAD825F568E0007D5618 /* ImageBlendEditorCollectionViewCell.swift */,
+				F8D4EAD425F5689A007D5618 /* ImageBlendEditorCollectionViewCell.xib */,
+				F8F4DBBC24442C060021FABA /* ImageBlendEditorViewController.storyboard */,
+				F8A4714A24377ABF00C2A46A /* PhotoCrop.h */,
+				F8A4714B24377ABF00C2A46A /* Info.plist */,
+				F8D4EAD025F3D6D2007D5618 /* Media.xcassets */,
+			);
+			path = ImageBlend;
+			sourceTree = "<group>";
+		};
+		F8A4715424377ABF00C2A46A /* PhotoCropTests */ = {
+			isa = PBXGroup;
+			children = (
+				F8A471C824377E6700C2A46A /* AspectRatioTests.swift */,
+				F8A471C224377E6700C2A46A /* Assets.xcassets */,
+				F8A471C324377E6700C2A46A /* CornerTests.swift */,
+				F8A471C524377E6700C2A46A /* CropTests.swift */,
+				F8A471C624377E6700C2A46A /* LinesTests.swift */,
+				F8A471C424377E6700C2A46A /* MasksTest.swift */,
+				F8A471C724377E6700C2A46A /* RotationTests.swift */,
+				F8A4715524377ABF00C2A46A /* PhotoCropTests.swift */,
+				F8A4715724377ABF00C2A46A /* Info.plist */,
+			);
+			path = PhotoCropTests;
+			sourceTree = "<group>";
+		};
+		F8A4717524377D0100C2A46A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4717624377D0100C2A46A /* CGImage+PhotoCropExtension.swift */,
+				F8A4717724377D0100C2A46A /* UIImage+PhotoCropExtension.swift */,
+				F8A4717824377D0100C2A46A /* UIColor+PhotoCropExtension.swift */,
+				F8A4717924377D0100C2A46A /* CGPoint+PhotoCropExtension.swift */,
+				F8A4717A24377D0100C2A46A /* CGFloat+PhotoCropExtension.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F8A4717B24377D0100C2A46A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4717C24377D0100C2A46A /* RadianAngle.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		F8A4717E24377D0100C2A46A /* HorizontalDial */ = {
+			isa = PBXGroup;
+			children = (
+				F8F4DBB82440B7DB0021FABA /* BaseCroppingDial.swift */,
+				F8A4717F24377D0100C2A46A /* HorizontalDial.swift */,
+				F8F4DBB6244082F60021FABA /* VerticalDial.swift */,
+			);
+			path = HorizontalDial;
+			sourceTree = "<group>";
+		};
+		F8A4718424377D0100C2A46A /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4718524377D0100C2A46A /* PhotoCropConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		F8A4718624377D0100C2A46A /* PhotoTweakView */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4718724377D0100C2A46A /* PhotoCropView+NSLayoutConstraint.swift */,
+				F8A4718824377D0100C2A46A /* PhotoCropView+Angle.swift */,
+				F8A4718924377D0100C2A46A /* PhotoCropView+Mask.swift */,
+				F8A4718A24377D0100C2A46A /* ScrollViews */,
+				F8A4718D24377D0100C2A46A /* PhotoCropView.swift */,
+				F8A4718E24377D0100C2A46A /* PhotoCropView+IGRCropView.swift */,
+				F8A4718F24377D0200C2A46A /* PhotoCropView+Touch.swift */,
+				F8A4719024377D0200C2A46A /* CropView */,
+				F8A4719D24377D0200C2A46A /* PhotoCropView+Customization.swift */,
+				F8A4719E24377D0200C2A46A /* PhotoCropView+AspectRatio.swift */,
+				F8A4719F24377D0200C2A46A /* PhotoCropView+UIScrollView.swift */,
+			);
+			path = PhotoTweakView;
+			sourceTree = "<group>";
+		};
+		F8A4718A24377D0100C2A46A /* ScrollViews */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4718B24377D0100C2A46A /* PhotoScrollView.swift */,
+				F8A4718C24377D0100C2A46A /* PhotoContentView.swift */,
+			);
+			path = ScrollViews;
+			sourceTree = "<group>";
+		};
+		F8A4719024377D0200C2A46A /* CropView */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4719224377D0200C2A46A /* Mask */,
+				F8A4719424377D0200C2A46A /* CropView.swift */,
+				F8A4719524377D0200C2A46A /* CropView+Lines.swift */,
+				F8A4719624377D0200C2A46A /* CropView+NSLayoutConstraint.swift */,
+				F8A4719724377D0200C2A46A /* CropView+AspectRatio.swift */,
+				F8A4719824377D0200C2A46A /* Lines */,
+			);
+			path = CropView;
+			sourceTree = "<group>";
+		};
+		F8A4719224377D0200C2A46A /* Mask */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4719324377D0200C2A46A /* CropMaskView.swift */,
+			);
+			path = Mask;
+			sourceTree = "<group>";
+		};
+		F8A4719824377D0200C2A46A /* Lines */ = {
+			isa = PBXGroup;
+			children = (
+				F8A4719924377D0200C2A46A /* CropLine.swift */,
+				F8A4719A24377D0200C2A46A /* CropGridLine.swift */,
+				F8A4719B24377D0200C2A46A /* CropCornerView.swift */,
+				F8A4719C24377D0200C2A46A /* CropCornerLine.swift */,
+			);
+			path = Lines;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F8A4714224377ABF00C2A46A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A4715824377ABF00C2A46A /* PhotoCrop.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F8A4714624377ABF00C2A46A /* ImageBlendEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A4715B24377ABF00C2A46A /* Build configuration list for PBXNativeTarget "ImageBlendEditor" */;
+			buildPhases = (
+				F8A4714224377ABF00C2A46A /* Headers */,
+				F8A4714324377ABF00C2A46A /* Sources */,
+				F8A4714424377ABF00C2A46A /* Frameworks */,
+				F8A4714524377ABF00C2A46A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageBlendEditor;
+			productName = PhotoCrop;
+			productReference = F8A4714724377ABF00C2A46A /* ImageBlendEditor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8A4714F24377ABF00C2A46A /* ImageBlendEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A4715E24377ABF00C2A46A /* Build configuration list for PBXNativeTarget "ImageBlendEditorTests" */;
+			buildPhases = (
+				F8A4714C24377ABF00C2A46A /* Sources */,
+				F8A4714D24377ABF00C2A46A /* Frameworks */,
+				F8A4714E24377ABF00C2A46A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8A4715324377ABF00C2A46A /* PBXTargetDependency */,
+			);
+			name = ImageBlendEditorTests;
+			productName = PhotoCropTests;
+			productReference = F8A4715024377ABF00C2A46A /* ImageBlendEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8A4713E24377ABF00C2A46A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1230;
+				ORGANIZATIONNAME = beequri;
+				TargetAttributes = {
+					F8A4714624377ABF00C2A46A = {
+						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
+					};
+					F8A4714F24377ABF00C2A46A = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F8A4714124377ABF00C2A46A /* Build configuration list for PBXProject "ImageBlendEditor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8A4713D24377ABF00C2A46A;
+			productRefGroup = F8A4714824377ABF00C2A46A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8A4714624377ABF00C2A46A /* ImageBlendEditor */,
+				F8A4714F24377ABF00C2A46A /* ImageBlendEditorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8A4714524377ABF00C2A46A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8D4EAD125F3D6D2007D5618 /* Media.xcassets in Resources */,
+				F8D4EAD525F5689A007D5618 /* ImageBlendEditorCollectionViewCell.xib in Resources */,
+				F8F4DBBD24442C060021FABA /* ImageBlendEditorViewController.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A4714E24377ABF00C2A46A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A471C924377E6700C2A46A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8A4714324377ABF00C2A46A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A471A124377D0200C2A46A /* UIImage+PhotoCropExtension.swift in Sources */,
+				F8A471B624377D0200C2A46A /* CropMaskView.swift in Sources */,
+				F8A471AC24377D0200C2A46A /* PhotoCropConstants.swift in Sources */,
+				F8A471B424377D0200C2A46A /* PhotoCropView+Touch.swift in Sources */,
+				F8A471B924377D0200C2A46A /* CropView+NSLayoutConstraint.swift in Sources */,
+				F8A471B224377D0200C2A46A /* PhotoCropView.swift in Sources */,
+				F8F4DBB7244082F60021FABA /* VerticalDial.swift in Sources */,
+				F8D4EAD925F568E0007D5618 /* ImageBlendEditorCollectionViewCell.swift in Sources */,
+				F8A471A224377D0200C2A46A /* UIColor+PhotoCropExtension.swift in Sources */,
+				F8A471BE24377D0200C2A46A /* CropCornerLine.swift in Sources */,
+				F8A471C024377D0200C2A46A /* PhotoCropView+AspectRatio.swift in Sources */,
+				F8A471AF24377D0200C2A46A /* PhotoCropView+Mask.swift in Sources */,
+				F8A471BB24377D0200C2A46A /* CropLine.swift in Sources */,
+				F8A471BF24377D0200C2A46A /* PhotoCropView+Customization.swift in Sources */,
+				F8D4EADF25F8B274007D5618 /* ImageBlend.swift in Sources */,
+				F8F4DBA8244034150021FABA /* PhotoCropImageViewController.swift in Sources */,
+				F8D4EAC025F2976C007D5618 /* ImageBlendModel.swift in Sources */,
+				F8F4DB89243E14340021FABA /* ImageBlendEditorViewController.swift in Sources */,
+				F8A471B724377D0200C2A46A /* CropView.swift in Sources */,
+				F8A471AB24377D0200C2A46A /* PhotoCropViewController+Customization.swift in Sources */,
+				F8A471B324377D0200C2A46A /* PhotoCropView+IGRCropView.swift in Sources */,
+				F8A471A324377D0200C2A46A /* CGPoint+PhotoCropExtension.swift in Sources */,
+				F8F4DBB92440B7DB0021FABA /* BaseCroppingDial.swift in Sources */,
+				F8A471A724377D0200C2A46A /* HorizontalDial.swift in Sources */,
+				F8A471AD24377D0200C2A46A /* PhotoCropView+NSLayoutConstraint.swift in Sources */,
+				F8A471B824377D0200C2A46A /* CropView+Lines.swift in Sources */,
+				AE51B32125A346E30016051B /* CircularAngleIndicator.swift in Sources */,
+				F8A471B024377D0200C2A46A /* PhotoScrollView.swift in Sources */,
+				F8A471BD24377D0200C2A46A /* CropCornerView.swift in Sources */,
+				F8D4EAEB25F8EF7F007D5618 /* ImageBlendOperation.swift in Sources */,
+				F8A471A024377D0200C2A46A /* CGImage+PhotoCropExtension.swift in Sources */,
+				F8A471BC24377D0200C2A46A /* CropGridLine.swift in Sources */,
+				F8A471C124377D0200C2A46A /* PhotoCropView+UIScrollView.swift in Sources */,
+				F8A471A524377D0200C2A46A /* RadianAngle.swift in Sources */,
+				F8A471A824377D0200C2A46A /* PhotoCropViewController+Angle.swift in Sources */,
+				F8A471A424377D0200C2A46A /* CGFloat+PhotoCropExtension.swift in Sources */,
+				F8A471AE24377D0200C2A46A /* PhotoCropView+Angle.swift in Sources */,
+				F8A471BA24377D0200C2A46A /* CropView+AspectRatio.swift in Sources */,
+				F8A471A924377D0200C2A46A /* ImageBlendViewController.swift in Sources */,
+				F8A471B124377D0200C2A46A /* PhotoContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A4714C24377ABF00C2A46A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A471CB24377E6700C2A46A /* MasksTest.swift in Sources */,
+				F8A471CD24377E6700C2A46A /* LinesTests.swift in Sources */,
+				F8A471CF24377E6700C2A46A /* AspectRatioTests.swift in Sources */,
+				F8A471CC24377E6700C2A46A /* CropTests.swift in Sources */,
+				F8A471CA24377E6700C2A46A /* CornerTests.swift in Sources */,
+				F8A4715624377ABF00C2A46A /* PhotoCropTests.swift in Sources */,
+				F8A471CE24377E6700C2A46A /* RotationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8A4715324377ABF00C2A46A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8A4714624377ABF00C2A46A /* ImageBlendEditor */;
+			targetProxy = F8A4715224377ABF00C2A46A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F8A4715924377ABF00C2A46A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F8A4715A24377ABF00C2A46A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F8A4715C24377ABF00C2A46A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ImageBlend/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beequri.ImageBlendEditor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		F8A4715D24377ABF00C2A46A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ImageBlend/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beequri.ImageBlendEditor;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Release;
+		};
+		F8A4715F24377ABF00C2A46A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoCropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beequri.PhotoCropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8A4716024377ABF00C2A46A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoCropTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = beequri.PhotoCropTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8A4714124377ABF00C2A46A /* Build configuration list for PBXProject "ImageBlendEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A4715924377ABF00C2A46A /* Debug */,
+				F8A4715A24377ABF00C2A46A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A4715B24377ABF00C2A46A /* Build configuration list for PBXNativeTarget "ImageBlendEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A4715C24377ABF00C2A46A /* Debug */,
+				F8A4715D24377ABF00C2A46A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A4715E24377ABF00C2A46A /* Build configuration list for PBXNativeTarget "ImageBlendEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A4715F24377ABF00C2A46A /* Debug */,
+				F8A4716024377ABF00C2A46A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8A4713E24377ABF00C2A46A /* Project object */;
+}
